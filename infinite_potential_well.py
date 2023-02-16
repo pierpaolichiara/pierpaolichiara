@@ -10,7 +10,9 @@ import scipy as sp
 
 
 #input
-
+print('This programme gives the first n eigenfunctions and eigenvalues of an electron in a infinite potential well with a width L.') 
+L=float(input('Please, insert the width of the potential well in Angstrom: L = '))
+n=int(input('Please, insert the number of the first eigenvalues and eigenstates of the electron you want to know: n = ')) 
 
 
 #definition of functions, to be put in sparate files py
