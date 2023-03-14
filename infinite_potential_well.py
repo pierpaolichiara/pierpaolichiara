@@ -7,8 +7,8 @@ import scipy as sp
 
 #parameters electron_mass, hbar, elementary_charge
 #hbar = constants.hbar
-hbar=6.58*10**(-16) #eV s
-m = constants.m_e
+hbar=1  #6.58*10**(-16) #eV s
+m = 1 #constants.m_e
 #pi = constants.pi
 pi = 3.14
 
