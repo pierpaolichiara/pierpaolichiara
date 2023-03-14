@@ -22,7 +22,7 @@ L=width                             #convertire unita' di misura
 
 #definition of functions, to be put in separate files py
 def eigenfunction(L,n):
-  psi_n=sqrt(2/L)*cos(n*pi*x/L)
+  psi_n=(2/L)**0.5*cos(n*pi*x/L)
   return(psi_n)
 
 def eigenvalues(L,n):         #definisco direttamente  E_n senza E_1?
