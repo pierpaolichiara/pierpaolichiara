@@ -6,9 +6,11 @@ import scipy as sp
 
 
 #parameters electron_mass, hbar, elementary_charge
-hbar = constants.hbar
+#hbar = constants.hbar
+hbar=6.58*10**(-16) #eV s
 m = constants.m_e
 #pi = constants.pi
+pi = 3.14
 
 #input n, L
 print('This programme gives the first n eigenfunctions and eigenvalues of an electron in a infinite potential well with a width L.') 
@@ -34,3 +36,4 @@ for level in range (n):
   
 
 #plot
+,
