@@ -35,12 +35,13 @@ for level in range (1,n):
   print(level, eigenfunction(L,level), eigenvalues(L,level))
   
 #plot
-x_array = np.linspace(-L/2, L/2, 100)\n
-fig, ax = plt.subplots()\n
+x_array = np.linspace(-L/2, L/2, 100)
+fig, ax = plt.subplots()
 for level in range (1, n):
     print(level, eigenvalues(L,level)/eigenvalues(L,1)
     y_array = [eigenfunction(L,level ,x) + 0.1*eigenvalues(L,level)/eigenvalues(L,1) for x in x_array]
-ax.plot(x_array, y_array, label =\"Level {} - \".format(level) + r'$s(t) = \\mathcal{A}\\mathrm{sin}(2 \\omega t)$')
+ax.plot(x_array, y_array, label =\
 ax.vlines(x=-L/2, ymin=0, ymax=1)
 fig.legend()
+
 fig.show()
