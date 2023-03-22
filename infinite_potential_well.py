@@ -37,7 +37,7 @@ for level in range (1,n):
 #plot
 x_array = np.linspace(-L/2, L/2, 100)
 fig, ax = plt.subplots()
-for level in range (1, n):
+for level in range (1, n+1):
     print(level, eigenvalues(L,level)/eigenvalues(L,1)
     y_array = [eigenfunction(L,level ,x) + 0.1*eigenvalues(L,level)/eigenvalues(L,1) for x in x_array]
 ax.plot(x_array, y_array, label =\
